@@ -13,11 +13,12 @@ export default function Home() {
   const [showMainContent, setShowMainContent] = useState(false);
 
   const handleScreenClick = () => {
-    setShowMainContent(true); // Trigger showing the main content
+    setShowMainContent(true);
   };
 
   return (
     <div className="font-sans">
+      <title>Michael's Portfolio Page</title>
       <Sidebar />
       {!showMainContent && <Hero onScreenClick={handleScreenClick} />}
       {showMainContent && (
