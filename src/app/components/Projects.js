@@ -19,15 +19,14 @@ const Projects = () => {
         title: 'Schelling’s Model of Segregation',
         tech: 'Python, Zelle Graphics',
         details: [
-          'Simulated residential segregation dynamics using Zelle Graphics.',
-          'Awarded “Most Scientific Project” in class.',
+          'Simulates residential segregation dynamics using Zelle Graphics.',
         ],
       },
     ];
   
     return (
       <section id="projects" className="min-h-screen bg-blue-50 text-blue-900 px-6 py-16">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto text-center animate-slideInLeft">
           <h2 className="text-4xl font-bold mb-12">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
@@ -48,7 +47,7 @@ const Projects = () => {
         </div>
       </section>
     );
-  };
+};
   
-  export default Projects;
+export default Projects;
   

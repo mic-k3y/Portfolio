@@ -28,7 +28,7 @@ const Sidebar = () => {
     <>
       {/* Sidebar for larger screens */}
       <aside className="hidden md:flex fixed top-0 left-0 h-screen bg-blue-900 text-white flex-col py-6 space-y-8 w-64">
-        <h1 className="text-2xl font-bold text-center">Michael Yilma</h1>
+        <h1 className="text-2xl font-bold text-center"><a href={'#about'}>Michael Yilma</a></h1>
         <nav>
           <ul className="space-y-4 text-lg font-medium">
             {['about', 'experience', 'skills', 'projects', 'contact'].map((item) => (
@@ -48,7 +48,7 @@ const Sidebar = () => {
       </aside>
 
       {/* Mobile navigation */}
-      <div className="md:hidden fixed top-0 left-0 w-full bg-blue-900 text-white flex items-center justify-between px-4 py-3">
+      <div className="md:hidden fixed top-0 left-0 w-full bg-blue-900 text-white flex items-center justify-between px-4 py-3 z-50">
         <h1 className="text-lg font-bold">Michael Yilma</h1>
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -72,7 +72,7 @@ const Sidebar = () => {
 
       {/* Dropdown menu */}
       {isMobileMenuOpen && (
-        <nav className="md:hidden fixed top-12 left-0 w-full bg-blue-800 text-white z-50">
+        <nav className="md:hidden fixed top-12 left-0 w-full bg-blue-800 text-white z-40">
           <ul className="flex flex-col space-y-4 px-6 py-4 text-lg font-medium">
             {['about', 'experience', 'skills', 'projects', 'contact'].map((item) => (
               <li key={item}>

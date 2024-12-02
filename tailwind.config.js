@@ -11,6 +11,7 @@ module.exports = {
         blink: 'blink 1s step-end infinite',
         fadeOut: 'fadeOut 1.5s ease-out forwards',
         fadeInUp: 'fadeInUp 1s ease-out',
+        slideInLeft: 'slideInLeft 1s ease-out',
       },
       keyframes: {
         blink: {
@@ -25,6 +26,10 @@ module.exports = {
         fadeInUp: {
           '0%': { opacity: 0, transform: 'translateY(10px)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+        slideInLeft: {
+          '0%': { opacity: 0, transform: 'translateX(-20px)' },
+          '100%': { opacity: 1, transform: 'translateX(0)' },
         },
       },
       colors: {

@@ -82,7 +82,7 @@ const Experience = () => {
               <h3 className="text-2xl font-semibold mb-2">{exp.title}</h3>
               <p className="font-medium">{exp.company}</p>
               <p className="italic text-sm mb-4">{exp.date}</p>
-              <p className="text-sm text-gray-300 mb-4">{exp.tech}</p>
+              <p className="text-sm mb-4">{exp.tech}</p>
               <ul className="list-disc ml-6 text-sm space-y-2">
                 {exp.details.map((detail, i) => (
                   <li key={i}>{detail}</li>

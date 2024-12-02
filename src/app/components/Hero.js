@@ -4,14 +4,14 @@ import { useState, useEffect, useRef } from 'react';
 
 const Hero = ({ onScreenClick }) => {
   const [text, setText] = useState('');
-  const fullText = 'Hi, my name is Michael Yilma';
+  const fullText = '  Hi, my name is Michael Yilma';
   const [isCursorVisible, setIsCursorVisible] = useState(true);
   const heroRef = useRef(null);
 
   useEffect(() => {
     let index = 0;
     const typingInterval = setInterval(() => {
-      if (index < fullText.length) {
+      if (index < fullText.length-1) {
         setText((prev) => prev + fullText[index]);
         index++;
       } else {
@@ -22,13 +22,13 @@ const Hero = ({ onScreenClick }) => {
     return () => clearInterval(typingInterval);
   }, []);
 
-  useEffect(() => {
-    const cursorBlinkInterval = setInterval(() => {
-      setIsCursorVisible((prev) => !prev);
-    }, 500);
+//   useEffect(() => {
+//     const cursorBlinkInterval = setInterval(() => {
+//       setIsCursorVisible((prev) => !prev);
+//     }, 500);
 
-    return () => clearInterval(cursorBlinkInterval);
-  }, []);
+//     return () => clearInterval(cursorBlinkInterval);
+//   }, []);
 
   const handleClick = () => {
     if (heroRef.current) {
@@ -47,7 +47,7 @@ const Hero = ({ onScreenClick }) => {
         {text}
         {isCursorVisible && <span className="animate-blink">|</span>}
       </h1>
-      <p className="absolute bottom-10 text-gray-300 animate-pulse">Click anywhere to continue</p>
+      <p className="absolute bottom-10 text-gray-400 animate-pulse">Click anywhere to continue</p>
     </div>
   );
 };

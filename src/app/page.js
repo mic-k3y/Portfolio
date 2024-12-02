@@ -18,18 +18,16 @@ export default function Home() {
 
   return (
     <div className="font-sans">
+      <Sidebar />
       {!showMainContent && <Hero onScreenClick={handleScreenClick} />}
       {showMainContent && (
-        <>
-          <Sidebar />
-          <main className="ml-64">
-            <About />
-            <Experience />
-            <SkillsCourses />
-            <Projects />
-            <Contact />
-          </main>
-        </>
+        <main className="md:ml-64 md:pl-0 pl-0">
+          <About />
+          <Experience />
+          <SkillsCourses />
+          <Projects />
+          <Contact />
+        </main>
       )}
     </div>
   );

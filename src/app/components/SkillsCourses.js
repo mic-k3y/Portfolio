@@ -29,10 +29,9 @@ const SkillsCourses = () => {
 
   return (
     <section id="skills" className="min-h-screen bg-white text-blue-900 px-6 py-16">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="max-w-7xl mx-auto text-center animate-fadeInUp">
         <h2 className="text-4xl font-bold mb-12">Technical Skills and Courses</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Technical Skills */}
           <div>
             <h3 className="text-2xl font-semibold mb-4">Technical Skills</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -46,8 +45,6 @@ const SkillsCourses = () => {
               ))}
             </div>
           </div>
-
-          {/* Relevant Coursework */}
           <div>
             <h3 className="text-2xl font-semibold mb-4">Relevant Coursework</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
