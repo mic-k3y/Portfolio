@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Header = () => (
   <header className="bg-gray-900 text-white p-4 fixed w-full z-10 shadow-lg">
     <nav className="flex justify-between items-center max-w-7xl mx-auto">
