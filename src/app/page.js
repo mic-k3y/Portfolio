@@ -1,21 +1,21 @@
 import Header from './components/Header';
-import About from './components/About';
+import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 export default function Home() {
   return (
     <div>
       <Header />
-      <main className="pt-20">
-        <About />
+      <main>
+        <Hero />
         <Skills />
         <Experience />
         <Projects />
+        <Contact />
       </main>
-      <Footer />
     </div>
   );
 }
