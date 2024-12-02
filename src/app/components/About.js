@@ -16,13 +16,14 @@ const About = () => {
       { threshold: 0.5 }
     );
 
-    if (aboutRef.current) {
-      observer.observe(aboutRef.current);
+    const currentRef = aboutRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (aboutRef.current) {
-        observer.unobserve(aboutRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
