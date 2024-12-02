@@ -1,5 +1,3 @@
-# Portfolio
-
 This is my portfolio page repo. It is a responsive and interactive portfolio website showcasing my skills, projects, and experiences. It is built with **Next.js**, **Tailwind CSS**, and modern animations, it adapts across devices.
 
 ---
