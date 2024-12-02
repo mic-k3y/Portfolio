@@ -1,5 +1,7 @@
 This is my portfolio page repo. It is a responsive and interactive portfolio website showcasing my skills, projects, and experiences. It is built with **Next.js**, **Tailwind CSS**, and modern animations, it adapts across devices.
 
+Currently it's hosted live at https://portfolio-hkklcg.next.genez.io/
+
 ---
 
 ## Features
@@ -16,7 +18,7 @@ This is my portfolio page repo. It is a responsive and interactive portfolio web
 ## Technologies
 - **Frontend**: Next.js, Tailwind CSS
 - **Animations**: Tailwind utilities and custom CSS
-- **Deployment**: Vercel or similar hosting platforms
+- **Deployment**: Genezio
 
 ---
 
