@@ -16,7 +16,7 @@ This is my portfolio page repo. It is a responsive and interactive portfolio web
 ## Technologies
 - **Frontend**: Next.js, Tailwind CSS
 - **Animations**: Tailwind utilities and custom CSS
-- **Deployment**: Vercel or similar hosting platforms
+- **Deployment**: Genezio
 
 ---
 
