@@ -40,7 +40,7 @@ const About = () => {
       >
         <h2 className="text-4xl font-bold mb-6">About Me</h2>
         <p className="text-lg leading-relaxed text-justify">
-        Hi, my name is Michael Yilma! I am an undergraduate student pursuing a B.A. in Computer Science and B.A. in Mathematics at Colby College. 
+        I am an undergraduate student pursuing a B.A. in Computer Science and B.A. in Mathematics at Colby College. 
         I am passionate about Software Engineering, Data Science, and Machine Learning and everything AI, and I am eager to apply my knowledge and skills to real-world challenges. 
         Feel free to connect if you'd like to discuss potential opportunities or collaborations!
         </p>
